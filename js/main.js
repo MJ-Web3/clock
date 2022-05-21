@@ -29,15 +29,15 @@ if (hours >= 0 && hours <= 23){
     h24 = hours + 1;
 }
 
-// minits (0 : 59)
-if (min >= 0 && min <= 59){
-    min = min + 1;
-}
+// // minits (0 : 59)
+// if (min >= 0 && min <= 59){
+//     min = min + 1;
+// }
 
-// seconds (0 : 59)
-if (sec >= 0 && sec <= 59){
-    sec = sec + 1;
-}
+// // seconds (0 : 59)
+// if (sec >= 0 && sec <= 59){
+//     sec = sec + 1;
+// }
 
 // am or pm
 if(hours >= 0 && hours <= 11){
@@ -169,3 +169,10 @@ clock12.innerHTML = h12 + ' : ' + min + ' : ' + sec + ' ' + amORpm;
 // printing the time on the screen with 24 format
 clock24.innerHTML = h24 + ' : ' + min + ' : ' + sec + ' ' + amORpm;
 
+
+console.log('date => ' + date);
+console.log('houres => ' + hours);
+console.log('h12 => ' + h12);
+console.log('h24 => ' + h24);
+console.log('min = > ' + min);
+console.log('sec => ' + sec);
