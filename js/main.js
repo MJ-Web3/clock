@@ -14,7 +14,7 @@ let sec = date.getSeconds();
 // sec     => seconds
 // amORpm  => AM / PM
 
-let h12, h24, m, s, amORpm;
+let h12, h24, amORpm;
 
 
 // 00 : 00 : 00 am/pm
