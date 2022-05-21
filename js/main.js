@@ -26,7 +26,7 @@ let h12, h24, amORpm;
 
 // hours in 24 format (0 : 23)
 if (hours >= 0 && hours <= 23){
-    h24 = hours // + 1;
+    h24 = hours;  // + 1;
 }
 
 // // minits (0 : 59)
@@ -41,10 +41,10 @@ if (hours >= 0 && hours <= 23){
 
 // am or pm
 if(hours >= 0 && hours <= 11){
-    amORpm = "AM"
+    amORpm = "AM";
 }
 else{
-    amORpm = "PM"
+    amORpm = "PM";
 }
 
 // hours in 12 format
