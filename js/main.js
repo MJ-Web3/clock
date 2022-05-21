@@ -10,11 +10,11 @@ let sec = date.getSeconds();
 
 // h12     => hours 12 format
 // h24     => hours 24 format
-// min     => minits
-// sec     => seconds
+// m       => minits
+// s       => seconds
 // amORpm  => AM / PM
 
-let h12, h24, amORpm;
+let h12, h24, m, s, amORpm;
 
 
 // 00 : 00 : 00 am/pm
@@ -24,9 +24,19 @@ let h12, h24, amORpm;
 // 1 2 3 4 5 6 7 8 9 10 11 12 1  2  3  4  5  6  7  8  9  10 11 12
 
 
-// hours in 24 format
+// hours in 24 format (0 : 23)
 if (hours >= 0 && hours <= 23){
     h24 = hours + 1;
+}
+
+// minits (0 : 59)
+if (min >= 0 && min <= 59){
+    m = min + 1;
+}
+
+// seconds (0 : 59)
+if (sec >= 0 && sec <= 59){
+    s = sec + 1;
 }
 
 // am or pm
@@ -146,15 +156,16 @@ if(h24 < 10){
     h24 = "0" + h24;
 }
 
-if(min < 10){
-    min = "0" + min;
+if(m < 10){
+    m = "0" + m;
 }
 
-if(sec < 10){
-    sec = "0" + sec;
+if(s < 10){
+    s = "0" + s;
 }
 
 // printing the time on the screen with 12 format
-clock12.innerHTML = h12 + ' : ' + min + ' : ' + sec + ' ' + amORpm;
+clock12.innerHTML = h12 + ' : ' + m + ' : ' + s + ' ' + amORpm;
 // printing the time on the screen with 24 format
-clock24.innerHTML = h24 + ' : ' + min + ' : ' + sec + ' ' + amORpm;
+clock24.innerHTML = h24 + ' : ' + m + ' : ' + s + ' ' + amORpm;
+
