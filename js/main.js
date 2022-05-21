@@ -26,7 +26,7 @@ let h12, h24, amORpm;
 
 // hours in 24 format (0 : 23)
 if (hours >= 0 && hours <= 23){
-    h24 = hours + 1;
+    h24 = hours // + 1;
 }
 
 // // minits (0 : 59)
@@ -50,100 +50,100 @@ else{
 // hours in 12 format
 switch(hours){
     case 0:
-        h12 = 1;
-        break
+        h12 = 12;
+        break;
 
         case 1:
-            h12 = 2;
-            break
+            h12 = 1;
+            break;
 
         case 2:
-            h12 = 3;
-            break
+            h12 = 2;
+            break;
 
         case 3:
-            h12 = 4;
-            break
+            h12 = 3;
+            break;
 
         case 4:
-            h12 = 5;
-            break
+            h12 = 4;
+            break;
 
         case 5:
-            h12 = 6;
-            break
+            h12 = 5;
+            break;
 
         case 6:
-            h12 = 7;
-            break
+            h12 = 6;
+            break;
 
         case 7:
-            h12 = 8;
-            break
+            h12 = 7;
+            break;
 
         case 8:
-            h12 = 9;
-            break
+            h12 = 8;
+            break;
 
         case 9:
-            h12 = 10;
-            break
+            h12 = 9;
+            break;
 
         case 10:
-            h12 = 11;
-            break
+            h12 = 10;
+            break;
 
         case 11:
-            h12 = 12;
-            break
+            h12 = 11;
+            break;
 
         case 12:
-            h12 = 01;
-            break
+            h12 = 12;
+            break;
 
         case 13:
-            h12 = 02;
-            break
+            h12 = 1;
+            break;
 
         case 14:
-            h12 = 03;
-            break
+            h12 = 2;
+            break;
 
         case 15:
-            h12 = 04;
-            break
+            h12 = 3;
+            break;
 
         case 16:
-            h12 = 05;
-            break
+            h12 = 4;
+            break;
 
         case 17:
-            h12 = 06;
-            break
+            h12 = 5;
+            break;
 
         case 18:
-            h12 = 07;
-            break
+            h12 = 6;
+            break;
 
         case 19:
-            h12 = 08;
-            break
+            h12 = 7;
+            break;
 
         case 20:
-            h12 = 09;
-            break
+            h12 = 8;
+            break;
 
         case 21:
-            h12 = 10;
-            break
+            h12 = 9;
+            break;
 
         case 22:
-            h12 = 11;
-            break
+            h12 = 10;
+            break;
 
         case 23:
-            h12 = 12;
-            break
+            h12 = 11;
+            break;
 }
 
 // adding zero if the number take one digit only
