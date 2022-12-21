@@ -165,9 +165,9 @@ if(sec < 10){
 }
 
 // printing the time on the screen with 12 format
-setTimeout( clock12.innerHTML = h12 + ' : ' + min + ' : ' + sec + ' ' + amORpm, 1000);
+setInterval( clock12.innerHTML = h12 + ' : ' + min + ' : ' + sec + ' ' + amORpm, 1000);
 // printing the time on the screen with 24 format
-setTimeout( clock24.innerHTML = h24 + ' : ' + min + ' : ' + sec + ' ' + amORpm, 1000);
+setInterval( clock24.innerHTML = h24 + ' : ' + min + ' : ' + sec + ' ' + amORpm, 1000);
 
 
 console.log('date => ' + date);
