@@ -164,7 +164,7 @@ if(sec < 10){
     sec = "0" + sec;
 }
 
-let function timer(){
+function timer(){
 // printing the time on the screen with 12 format
 clock12.innerHTML = h12 + ' : ' + min + ' : ' + sec + ' ' + amORpm;
 // printing the time on the screen with 24 format
