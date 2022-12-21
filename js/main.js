@@ -164,11 +164,14 @@ if(sec < 10){
     sec = "0" + sec;
 }
 
+let function timer(){
 // printing the time on the screen with 12 format
-setInterval( clock12.innerHTML = h12 + ' : ' + min + ' : ' + sec + ' ' + amORpm, 1000);
+clock12.innerHTML = h12 + ' : ' + min + ' : ' + sec + ' ' + amORpm;
 // printing the time on the screen with 24 format
-setInterval( clock24.innerHTML = h24 + ' : ' + min + ' : ' + sec + ' ' + amORpm, 1000);
+clock24.innerHTML = h24 + ' : ' + min + ' : ' + sec + ' ' + amORpm;
+}
 
+setInterval(timer,1000);
 
 console.log('date => ' + date);
 console.log('houres => ' + hours);
